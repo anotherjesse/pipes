@@ -250,6 +250,8 @@ var renderer = new THREE.WebGLRenderer({
   antialias: true,
   canvas: canvasWebGL,
 });
+document.body.appendChild(VRButton.createButton(renderer));
+renderer.xr.enabled = true;
 renderer.setSize(window.innerWidth, window.innerHeight);
 
 // camera
@@ -440,7 +442,7 @@ function animate() {
     }
   }
 
-  requestAnimationFrame(animate);
+  renderer.setAnimationLoop(animate);
 }
 
 function look() {
@@ -540,7 +542,12 @@ function updateFromParametersInURL() {
         params = null;
       }
     } catch (error) {
-      alert("Invalid URL parameter JSON syntax\n\n" + error + "\n\nRecieved:\n" + paramsJSON);
+      alert(
+        "Invalid URL parameter JSON syntax\n\n" +
+          error +
+          "\n\nRecieved:\n" +
+          paramsJSON
+      );
     }
   }
   params = params || {};
