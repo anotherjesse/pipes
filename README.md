@@ -6,6 +6,7 @@
 - setup the renderer
 - use the correct animation callback
 - more recent threejs (but not most recent as things have changed!)
+- TODO: the screensaver.js dissolveRects effect isn't done in webgl / the renderer isn't run - so a different wipe effect should be implemented --- this is why the vr scene stops "tracking" right before clearing and restarting
 
 A web-based remake of the Windows 3D Pipes screensaver (3D Pipes.scr or sspipes.scr) using [Three.js](https://threejs.org/)
 
