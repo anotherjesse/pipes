@@ -1,5 +1,12 @@
 # [![](images/meta/icon-32x32.png) Pipes](https://1j01.github.io/pipes/)
 
+**this is a webxr fork of https://github.com/1j01/pipes**
+
+- add the vr button
+- setup the renderer
+- use the correct animation callback
+- more recent threejs (but not most recent as things have changed!)
+
 A web-based remake of the Windows 3D Pipes screensaver (3D Pipes.scr or sspipes.scr) using [Three.js](https://threejs.org/)
 
 Includes both [Utah Teapots](https://en.wikipedia.org/wiki/Utah_teapot) and candy cane easter eggs! (with increased chances 😏)
